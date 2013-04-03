@@ -7,8 +7,8 @@ Pod::Spec.new do |s|
   s.author   = { 'Alex Vollmer' => 'alex.vollmer@gmail.com' }
 
   s.source   = {
-    :git => 'https://github.com/eholzwarth/tuneup_js.git',
-    :commit => '5b87e6988b8aee34fcfe5cf9bd7e10e0625c41af'
+    :git => 'https://github.com/alexvollmer/tuneup_js.git',
+    :commit => 'e8b13f7ae870b674876592565cb18643855c9995'
   }
 
   s.description = 'Tune-up is a collection of JavaScript utilities that builds upon and improves the UIAutomation library provided by Apple for testing iOS applications via Instruments (get it? "tune-up"? Instruments? get it?).'
@@ -16,5 +16,5 @@ Pod::Spec.new do |s|
   s.platform = :ios
   # s.platform = :osx # UIAutomation isn't yet on OS X
 
-  s.preserve_paths = '*.js'
+  s.preserve_paths = '*', 'test_runner/*'
 end
